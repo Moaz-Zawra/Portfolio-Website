@@ -1,18 +1,52 @@
 /* styles.css */
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  /* Start of CSS settings for the variable Google font "Sour Gummy" */
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "width" 100;
   line-height: 1.5;
-  background-color: #0a0a0a;
+  /* End of CSS settings for the variable Google font "Sour Gummy" */
+  background-color: #222831;
   background-image: radial-gradient(
-      rgba(255, 255, 255, 0.03) 1px,
+      rgba(148, 137, 121, 0.03) 1px,
       transparent 1px
     ),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.01) 25%, transparent 25%);
+    linear-gradient(135deg, rgba(148, 137, 121, 0.01) 25%, transparent 25%);
   background-size: 25px 25px, 40px 40px;
   color: whitesmoke;
 }
+
+/* CSS for different text classes across the website */
+
+.header-text {
+  font-weight: bolder;
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+.main-title {
+  font-size: 40px;
+  color: whitesmoke;
+}
+
+.sub-text {
+  font-size: 20px;
+  font-weight: lighter;
+  color: whitesmoke;
+}
+
+.extra-text {
+  font-size: 15px;
+  font-style: italic;
+  color: grey;
+}
+
+/* End of text styling */
 
 .container {
   display: flex;
@@ -21,23 +55,18 @@ body {
 }
 
 .header {
-  margin: 20px;
-  padding: 30px;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  font-weight: bolder;
+  padding: 10px;
+  padding-inline-start: 50px;
+  background-color: rgba(223, 208, 184, 0.3); /* Light beige with 30% opacity */
 }
 
 .hero-section {
-  background-color: #0a0a0a;
-  margin: 20px;
+  background-color: #222831;
   padding: 50px;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
   background: radial-gradient(
     circle at center,
-    rgba(20, 184, 166, 0.1),
-    transparent 70%
+    rgba(148, 137, 121, 0.1),
+    transparent 40%
   );
 }
 
@@ -70,11 +99,19 @@ body {
 }
 
 .profile-photo {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
-  border: 3px solid #0d9488;
+  border: 3px solid #dfd0b8;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.profile-photo:hover {
+  transform: scale(
+    1.025,
+    1.025
+  ); /* Scale the picture to be a bit bigger on hover */
+  border: 3px solid #948979; /* Slightly change the profile photo border accent on hover */
 }
 
 button {
@@ -84,7 +121,11 @@ button {
   font-weight: bold;
   font-size: 14px;
   margin-right: 30px;
-  background-color: #0d9488;
+  background-color: #dfd0b8;
+}
+
+button:hover {
+  background-color: #948979; /* Slightly change the button accent on hover */
 }
 
 .LinkedIn-Logo,
