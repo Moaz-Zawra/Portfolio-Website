@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="projects">
+        <h2 style="text-align: center;">Projects</h2>
+        <ul id="projects-list"></ul>
+        <!-- Automatically update and fetch projects from my GitHub and display them on the website -->
+        <script>
+            fetch('https://api.github.com/users/Moaz-Zawra/repos')
+                .then(response => response.json())
+                .then(data => {
+                    const projectsList = document.getElementById('projects-list');
+                    data.forEach(repo => {
+                        // Only show public, non-fork projects
+                        if (!repo.fork) {
+                            const li = document.createElement('li');
+                            li.innerHTML = `
+            <strong>${repo.name}</strong>: ${repo.description || 'No description'}
+            <br>
+            <a href="${repo.html_url}" target="_blank">View on GitHub</a>
+          `;
+                            projectsList.appendChild(li);
+                        }
+                    });
+                });
+        </script>
+        <a href="index.html"><button>Home Page</button></a>
+    </div> <br />
+</body>
+
+</html>
