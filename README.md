@@ -28,8 +28,8 @@ Website-Portfolio/
 ├── Images/             # Folder containing images
 │   └── profile_circle.webp
 │
-├── README.md           # Project documentation (this file)
-└── LICENSE             # License file if open-source
+├── README.md           # Project documentation
+└── LICENSE             # License file
 ```
 
 ---
