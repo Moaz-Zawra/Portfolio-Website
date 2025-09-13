@@ -29,7 +29,7 @@ Website-Portfolio/
 │   └── profile_circle.webp
 │
 ├── README.md           # Project documentation (this file)
-└── (Optional) LICENSE  # License file if open-source
+└── LICENSE             # License file if open-source
 ```
 
 ---
@@ -89,7 +89,7 @@ You can view the site by opening `index.html` in any modern browser:
 
 ---
 
-## 🌐 Live Demo (Optional)
+## 🌐 Live Demo
 
 If hosted via GitHub Pages:
 > **Live Site:** [https://moaz-zawra.github.io/Website-Portfolio](https://moaz-zawra.github.io/Website-Portfolio)
