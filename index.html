@@ -27,9 +27,14 @@
 <body>
     <!-- Start of the header section -->
     <section class="header">
-        <a href="#hero-section">
-            <p class="header-text">Moaz Zawra</p>
+        <a href="#hero-section" class="header-text">
+            <p>Moaz Zawra</p>
         </a>
+        <!-- Hamburger menu - only used for small screens -->
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+        </button>
+        <!-- Navigation links -->
         <div class="header-links">
             <a href="#about-me">About me</a>
             <a href="#projects">Projects</a>
@@ -40,7 +45,7 @@
     <main>
         <!-- Start of the hero section -->
         <section class="hero-section" id="hero-section">
-            <p class="special-text">Hello World, I'm Moaz</p>
+            <h1>Hello World, I'm Moaz</h1>
             <!-- Easter egg: clicking on the profile icon, takes the user to the about-me section! -->
             <a href="#about-me"><img src="Images/profile_circle.webp" alt="profile photo of Moaz"
                     class="profile-photo"></a>
@@ -64,21 +69,19 @@
             <div class="bio">
                 <p>I'm a recent Computer Science graduate with a strong foundation in software development, web
                     technologies, and game programming. My academic background is further enhanced by a minor in
-                    Philosophy,
-                    which has sharpened my analytical and critical thinking skills.
+                    Philosophy, which has sharpened my analytical and critical thinking skills.
 
                     I bring hands-on experience in developing full-stack web applications, designing interactive games
-                    using
-                    C++ and OpenGL, and creating dynamic, user-friendly websites with HTML, CSS (Tailwind), JavaScript,
-                    and
-                    PHP. I have also worked with databases using SQL and built backend logic using Node.js and AJAX.
+                    using C++ and OpenGL, and creating dynamic, user-friendly websites with HTML, CSS (Tailwind),
+                    JavaScript, and PHP. I have also worked with databases using SQL and built backend logic using
+                    Node.js and AJAX.
 
                     While at university, I also held roles in IT Support and Technology Training, where I provided
-                    technical
-                    support services and facilitated instructor training webinars, among other responsibilities. I
-                    successfully resolved over 50 support tickets involving both software and hardware issues, and
-                    collaborated with team members to test and evaluate new system features—demonstrating strong
-                    problem-solving skills and the ability to work efficiently both independently and as part of a team.
+                    technical support services and facilitated instructor training webinars, among other
+                    responsibilities. I successfully resolved over 50 support tickets involving both software and
+                    hardware issues, and collaborated with team members to test and evaluate new system
+                    features—demonstrating strong problem-solving skills and the ability to work efficiently both
+                    independently and as part of a team.
 
                     I am passionate about learning, detail-oriented, and thrive in team environments. I value clear
                     communication, efficient multitasking, and continuous improvement.</p>
@@ -187,10 +190,43 @@
         </div>
     </footer>
     <!-- End of the footer section -->
+
     <!-- Script to dynamically set year for the copyright section of the footer -->
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+
+    <!-- Script to toggle navigation menu for the header on small devices -->
+    <script>
+        document.addEventListener('DOMContentLoaded',
+            () => {
+                const menuToggle = document.querySelector('.menu-toggle');
+                const headerLinks = document.querySelector('.header-links');
+                const navLinks = document.querySelectorAll('.header-links a');  // all nav links under the class header-links
+                const mainTitle = document.querySelector('.header a');  // the first <a> tag under the header class - responsible for the header-text
+
+                // Toggle menu open/close when nav button is clicked
+                menuToggle.addEventListener('click', () => {
+                    headerLinks.classList.toggle('active');
+                    menuToggle.classList.toggle('active');  // trigger the active state to animate button
+                });
+
+                // Close menu when any link from the header links is clicked
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        headerLinks.classList.remove('active');
+                        menuToggle.classList.remove('active');
+                    });
+                });
+
+                // Close menu when the main website title 'Moaz Zawra' is clicked
+                mainTitle.addEventListener('click', () => {
+                    headerLinks.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                });
+            });
+    </script>
+
 </body>
 
 </html>
