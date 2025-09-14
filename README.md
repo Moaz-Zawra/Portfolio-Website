@@ -28,8 +28,8 @@ Website-Portfolio/
 ├── Images/             # Folder containing images
 │   └── profile_circle.webp
 │
-├── README.md           # Project documentation (this file)
-└── (Optional) LICENSE  # License file if open-source
+├── README.md           # Project documentation
+└── LICENSE             # License file
 ```
 
 ---
@@ -37,13 +37,16 @@ Website-Portfolio/
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/Moaz-Zawra/Website-Portfolio.git
 ```
 
 ### 2. Open the Project
+
 You can view the site by opening `index.html` in any modern browser:
-- Double-click `index.html`, or  
+
+- Double-click `index.html`, or
 - Use a local development server such as the **Live Server** extension in VS Code for smoother development.
 
 ---
@@ -62,15 +65,18 @@ You can view the site by opening `index.html` in any modern browser:
 ## 💻 Key Sections
 
 ### **Hero Section**
+
 - Highlights name, title, and a call-to-action tagline.
 - Profile image is clickable and links to the About Me section.
 - Includes social links to GitHub and LinkedIn.
 
 ### **About Me**
+
 - Introduction with academic background and experience summary.
 - Provides context for technical skills and problem-solving approach.
 
 ### **Projects**
+
 - Dynamically fetches up to **6 public repositories** from GitHub using the GitHub API.
 - Each project shows:
   - Name
@@ -78,20 +84,23 @@ You can view the site by opening `index.html` in any modern browser:
   - Direct link to the repository
 
 ### **Skills**
+
 - Organized into three categories:
   1. **Experience** – Areas of expertise and practical knowledge.
   2. **Tech Stack** – Displayed with Devicon logos for quick visual recognition.
   3. **Soft Skills** – Teamwork, collaboration, and communication skills.
 
 ### **Footer**
+
 - Contains social icons and a dynamically generated copyright.
 - Clean, minimal design.
 
 ---
 
-## 🌐 Live Demo (Optional)
+## 🌐 Live Demo
 
 If hosted via GitHub Pages:
+
 > **Live Site:** [https://moaz-zawra.github.io/Website-Portfolio](https://moaz-zawra.github.io/Website-Portfolio)
 
 ---
@@ -116,5 +125,5 @@ This project is open source and available under the [MIT License](LICENSE).
 
 If you'd like to connect or collaborate, you can reach me here:
 
-- **LinkedIn:** [linkedin.com/in/moaz-zawra](https://www.linkedin.com/in/moaz-zawra/)  
+- **LinkedIn:** [linkedin.com/in/moaz-zawra](https://www.linkedin.com/in/moaz-zawra/)
 - **GitHub:** [github.com/Moaz-Zawra](https://github.com/Moaz-Zawra)
