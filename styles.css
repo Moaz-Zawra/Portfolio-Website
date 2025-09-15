@@ -22,6 +22,8 @@ body {
   font-family: "Sour Gummy", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
+  line-height: 1.6;
+  font-display: swap;
   font-style: normal;
   font-variation-settings: "width" 100;
   /* End of CSS settings for the variable Google font "Sour Gummy" */
@@ -33,7 +35,6 @@ body {
     linear-gradient(135deg, rgba(148, 137, 121, 0.01) 25%, transparent 25%);
   background-size: 25px 25px, 40px 40px;
   color: whitesmoke;
-  line-height: 1.6;
   overflow-x: hidden;
 }
 
@@ -93,8 +94,8 @@ section {
 /* Menu toggle styling - hide menu toggle if screen size > 768px */
 .menu-toggle {
   display: none;
-  width: 42px;
-  height: 42px;
+  width: 50px;
+  height: 50px;
   background-color: #f8f4e1; /* Soft neutral color for contrast */
   border: 2px solid #333;
   border-radius: 50%; /* Rounded button shape */
@@ -182,18 +183,28 @@ section {
     top: 100%;
     right: 0;
     width: 100%;
-    background: rgba(57, 62, 70, 1);
     text-align: center;
     padding: 0; /* no padding when hidden */
     max-height: 0;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: 0;
     overflow: hidden;
     transition: max-height 0.3s ease, padding 0.3s ease;
+    background: rgba(57, 62, 70, 0.99);
+    background-image: radial-gradient(
+      rgba(255, 255, 255, 0.04) 1px,
+      transparent 1px
+    );
+    background-size: 20px 20px;
   }
 
   /* Active state for the header links - when visible */
   .header-links.active {
     max-height: 300px;
     padding: 1rem 0;
+    border: 1px solid #f8f4e1;
+    border-radius: 2px;
   }
 }
 
@@ -258,7 +269,7 @@ section {
 /* Smaller screen adjustments for better readability and responsiveness */
 @media (max-width: 480px) {
   .hero-section .profile-photo {
-    width: 150px;
+    width: 200px;
   }
 
   .sub-text,
@@ -279,7 +290,7 @@ section {
     transparent 1px
   );
   background-size: 20px 20px;
-  text-align: justify;
+  text-align: start;
   margin: 20px;
   padding: 30px;
 }
@@ -288,7 +299,7 @@ section {
   max-width: 800px;
   margin: 0 auto;
   padding: 1rem;
-  line-height: 2;
+  line-height: 1.6;
 }
 
 @media (max-width: 768px) {
@@ -310,10 +321,10 @@ section {
     transparent 1px
   );
   background-size: 20px 20px;
-  text-align: justify;
+  text-align: start;
   margin: 20px;
   padding: 30px;
-  line-height: 2;
+  line-height: 1.6;
 }
 
 .projects ul {
@@ -474,6 +485,7 @@ section {
   font-size: 28px;
   color: whitesmoke;
   transition: transform 0.3s ease, color 0.3 ease;
+  cursor: pointer;
 }
 
 .footer-social i:hover {

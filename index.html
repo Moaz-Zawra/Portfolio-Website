@@ -13,8 +13,7 @@
     <!-- Start of External code embed for the Google font used site wide -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:wght@100..900&display=swap" rel="stylesheet">
     <!-- End of External code embed for the Google font used site wide -->
     <!-- Code embed for the Font Awesome 4 icons used -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -223,6 +222,12 @@
                 mainTitle.addEventListener('click', () => {
                     headerLinks.classList.remove('active');
                     menuToggle.classList.remove('active');
+                });
+
+                // Adding aria-expanded to menu button when toggled for screen readers
+                mainToggle.addEventListener('click', () => {
+                    const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+                    menuToggle.setAttribute('aria-expanded', !expanded);
                 });
             });
     </script>
