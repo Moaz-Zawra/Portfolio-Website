@@ -20,7 +20,7 @@ This site serves as a central hub for potential employers, collaborators, and re
 ## 📂 Project Structure
 
 ```
-Website-Portfolio/
+Portfolio-Website/
 │
 ├── index.html          # Main HTML file containing all site content
 ├── styles.css          # CSS file for global styling and layout
@@ -39,7 +39,7 @@ Website-Portfolio/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Moaz-Zawra/Website-Portfolio.git
+git clone https://github.com/Moaz-Zawra/Portfolio-Website.git
 ```
 
 ### 2. Open the Project
