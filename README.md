@@ -101,7 +101,7 @@ You can view the site by opening `index.html` in any modern browser:
 
 If hosted via GitHub Pages:
 
-> **Live Site:** [https://moaz-zawra.github.io/Website-Portfolio](https://moaz-zawra.github.io/Website-Portfolio)
+> **Live Site:** [https://moaz-zawra.github.io/Portfolio-Website](https://moaz-zawra.github.io/Portfolio-Website)
 
 ---
 
