@@ -39,7 +39,7 @@ Portfolio-Website/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Moaz-Zawra/Portfolio-Website.git
+git clone https://github.com/moaz-zawra/Portfolio-Website.git
 ```
 
 ### 2. Open the Project
@@ -126,4 +126,4 @@ This project is open source and available under the [MIT License](LICENSE).
 If you'd like to connect or collaborate, you can reach me here:
 
 - **LinkedIn:** [linkedin.com/in/moaz-zawra](https://www.linkedin.com/in/moaz-zawra/)
-- **GitHub:** [github.com/Moaz-Zawra](https://github.com/Moaz-Zawra)
+- **GitHub:** [github.com/moaz-zawra](https://github.com/moaz-zawra)
